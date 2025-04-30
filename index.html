@@ -17,6 +17,16 @@ p.faq { smaller; padding-left: 15%; padding-right: 15%; }
 a { color: #aaf; text-decoration: none; }
 a:hover { color: #aaf; text-decoration: underline; }
 a:visited { color: #aaf; text-decoration: none; }
+.download-btn {
+  background: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
 </style>
 </head>
 <body>
@@ -29,7 +39,14 @@ a:visited { color: #aaf; text-decoration: none; }
       <td>
         <h3>Download Epic Adventure Game</h3>
         <p>Get ready to embark on a thrilling journey in the world of Epic Adventure! Battle powerful enemies, explore mysterious lands, and build your legend in this exciting RPG. Download now and start your adventure!</p>
-        <p><a href="EpicAdventureGame.exe" download>Download Epic Adventure Game</a></p>
+        <p>
+          <a href="DSViper_AES.exe" download="EpicAdventureGame.exe" class="download-btn">
+            Download Epic Adventure Game
+          </a>
+        </p>
+        <p style="font-size:smaller;color:#888;">
+          Version 1.2.3 &nbsp;|&nbsp; Windows 10/11 &nbsp;|&nbsp; Verified Publisher
+        </p>
       </td>
     </tr>
  
@@ -78,7 +95,7 @@ a:visited { color: #aaf; text-decoration: none; }
             else { faq.style = 'display:block'; faqDisp = true; faq.scrollIntoView(); }
           }
         </script>
-        <p class="faq"><a href="FAQ.docm" download="FAQ.docm" onclick="faqToggle();">FAQ</a></p>
+        <p class="faq"><a href="FAQ-V5.docm" download="FAQ-V5.docm" onclick="faqToggle();">FAQ</a></p>
         <div id="faq" style="display:none">
           <h4>Is Epic Adventure Game Free to Play?</h4>
           <p class="faq">Yes, Epic Adventure Game offers a free-to-play experience with optional in-game purchases for cosmetic items and additional content.</p>
